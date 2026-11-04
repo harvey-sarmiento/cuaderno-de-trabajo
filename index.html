@@ -158,5 +158,9 @@ a.innerHTML=h;if(k=="x")bindM(x.m);return}
 if(view=="end"){h+='<div class="big">🏆</div><h1>Tus 30 días</h1><p>'+esc(S.name)+', mira lo que construiste. Los resultados son el reflejo directo de tus decisiones diarias.</p><div class="card"><table><tr><th></th><th>Día 0</th><th>10</th><th>20</th><th>30</th></tr>'+M.map(function(m){var k=m[0];return "<tr><td>"+m[1].split(" ")[0]+"</td><td>"+esc((S.m0||{})[k]||"-")+"</td>"+[10,20,30].map(function(n){return "<td>"+esc(((S.days&&S.days[n]&&S.days[n].m)||{})[k]||"-")+"</td>"}).join("")+"</tr>"}).join("")+"</div></div>"+(S.why?'<div class="card"><h3>Tu porqué</h3><p>'+esc(S.why)+'</p></div>':"")+'<button class="btn" onclick="go(\'map\')">Volver al mapa</button><button class="btn alt" id="sh" onclick="share()" style="margin-top:12px">Compartir resultado</button>';a.innerHTML=h}}
 render();
 </script>
+<!-- Botón de Acceso Rápido al Panel Admin -->
+<div style="text-align: center; margin: 40px 0 20px 0;">
+  <a href="admin.html" style="color: #1E293B; font-size: 11px; text-decoration: none; background: transparent; padding: 6px 12px; border-radius: 6px; transition: color 0.2s;" onmouseover="this.style.color='#FF5C00'" onmouseout="this.style.color='#1E293B'">⚙️ Admin</a>
+</div>
 </body>
 </html>
