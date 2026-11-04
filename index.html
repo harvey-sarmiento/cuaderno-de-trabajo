@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mis 30 días</title>
+<title>Mis 30 días · Cuaderno de acompañamiento</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap">
 <style>
@@ -70,14 +70,30 @@ table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px
 .small{font-size:13px;color:var(--soft);text-align:center}
 .link{background:none;border:0;color:var(--soft);font:inherit;text-decoration:underline;cursor:pointer;padding:10px;display:block;margin:0 auto;font-size:13px}
 .link:hover{color:var(--ink)}
+
+/* Premium journal refresh */
+:root{--bg:#090b0f;--card:#141922;--card-hover:#1b2430;--ink:#f5f2ed;--soft:#9aa3ad;--line:#29313d;--p:#ff6b2c;--p-glow:rgba(255,107,44,.22);--gold:#e9b86b;--ok:#54c6a3;--box-shadow:0 18px 50px rgba(0,0,0,.24)}
+html,body{background:radial-gradient(ellipse at 50% -15%,rgba(255,107,44,.13),transparent 42%),var(--bg);letter-spacing:.005em}
+#app{max-width:560px;padding:26px 18px 76px}
+h1{font-size:clamp(30px,7vw,42px);letter-spacing:-.045em}h2{font-size:27px;letter-spacing:-.035em}h3{letter-spacing:-.02em}
+.card{background:linear-gradient(145deg,rgba(24,31,42,.98),rgba(17,22,30,.98));border:1px solid rgba(255,255,255,.075);border-radius:25px;padding:22px;box-shadow:0 18px 48px rgba(0,0,0,.2)}
+.hero-card{position:relative;overflow:hidden;padding:25px;border-radius:28px;margin-bottom:14px;background:linear-gradient(135deg,#25232a 0%,#171c25 58%,#20232a 100%);border:1px solid rgba(255,255,255,.1);box-shadow:0 22px 60px rgba(0,0,0,.3)}
+.hero-card:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;right:-100px;top:-115px;border:1px solid rgba(255,255,255,.09);box-shadow:0 0 0 24px rgba(255,255,255,.018),0 0 0 48px rgba(255,255,255,.014)}
+.hero-top,.progress-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.eyebrow,.section-kicker{font-size:10px;font-weight:900;letter-spacing:.17em;color:#e6a77f}.level-pill{font-size:11px;font-weight:800;color:#f6d9a6;background:rgba(233,184,107,.12);border:1px solid rgba(233,184,107,.25);border-radius:30px;padding:7px 11px}.hero-card h1{margin:24px 0 4px}.hero-copy{max-width:300px;margin-bottom:24px}.progress-head{font-size:12px;color:#b7bec6;font-weight:700}.progress-head strong{font-size:17px;color:#fff}.hero-card .bar{height:9px;background:rgba(255,255,255,.12);margin:9px 0 0}.hero-card .bar i{background:linear-gradient(90deg,#ff6b2c,#f0bd78);box-shadow:0 0 18px rgba(255,107,44,.35)}.hero-card .stats{margin-top:12px;text-transform:none;letter-spacing:0;font-size:11px}.hero-card .btn{margin-top:21px;background:linear-gradient(100deg,#ff682b,#e94d20);border-radius:14px;box-shadow:0 9px 24px rgba(255,91,37,.2);justify-content:space-between;padding:15px 18px}
+.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}.metric-card{min-width:0;padding:15px 12px;border-radius:19px;background:rgba(20,25,34,.9);border:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;gap:3px}.metric-icon{font-size:17px;color:#e8a477}.metric-card strong{font-size:25px;line-height:1.15;letter-spacing:-.04em}.metric-card strong small{font-size:12px;color:var(--soft)}.metric-card>span:last-child{font-size:10px;color:var(--soft);font-weight:700}
+.habit-overview{padding:18px 20px}.habit-overview .row{align-items:center;margin-top:7px}.habit-overview h3{margin:0;font-size:16px}.habit-overview .row strong{color:#f1bd8c;font-size:18px}.habit-overview p{font-size:12px;margin:10px 0 0}.habit-bar{height:7px}.habit-bar i{background:linear-gradient(90deg,#54c6a3,#a6d6a8)}
+.achievement-strip{padding:18px 19px;margin:16px 0 24px;border:1px solid rgba(255,255,255,.07);background:rgba(20,25,34,.65);border-radius:20px}.badges-row{display:flex;gap:12px;margin-top:13px}.achievement{width:54px;height:58px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;border-radius:15px;background:#11161e;border:1px solid #303845;filter:grayscale(1);opacity:.38;font-size:20px}.achievement.earned{filter:none;opacity:1;border-color:rgba(233,184,107,.38);background:linear-gradient(145deg,rgba(233,184,107,.14),rgba(255,107,44,.08));box-shadow:inset 0 0 18px rgba(233,184,107,.05)}.achievement small{font-size:8px;color:#d7c4ae;font-weight:800}
+.phase-title{font-size:14px;margin:24px 0 11px;padding-left:11px;border-left:3px solid var(--phase);color:#e9c7a9}.grid{grid-template-columns:repeat(5,1fr);gap:9px}.node{border-radius:15px;background:linear-gradient(145deg,#171e28,#11161e);border-color:#293341;font-size:15px;min-height:54px}.node.done{background:rgba(84,198,163,.12);border-color:rgba(84,198,163,.65);color:#73d6b7}.node.now{border-color:#ff7843;box-shadow:0 0 0 3px rgba(255,107,44,.15);background:rgba(255,107,44,.09)}
+.btn{border-radius:15px;background:linear-gradient(100deg,#ff6b2c,#eb5425);box-shadow:0 8px 22px rgba(255,107,44,.17)}.btn.alt{background:rgba(255,255,255,.025);border-color:#394351}.chk{border-radius:15px;background:#10151d;border-color:#293340;padding:15px}.chk.on{background:rgba(84,198,163,.09);border-color:rgba(84,198,163,.6)}.chk b{font-size:21px}.top .back{border-radius:13px;background:#171e28}.dots i.on{background:var(--p)}
+.notebook-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:8px 0 22px}.day-stamp{font-size:10px;letter-spacing:.12em;font-weight:900;color:#e7b58f;border:1px solid rgba(231,181,143,.25);background:rgba(231,181,143,.07);padding:7px 10px;border-radius:20px}.tag{border-radius:8px;font-size:10px;letter-spacing:.1em;padding:6px 10px}.small{line-height:1.6}.link{margin-top:14px}
+input[type=text],input[type=number],textarea{background:#0d1219;border-color:#303a47;border-radius:13px}textarea{line-height:1.65}.chip{border-radius:13px}.chip.on{background:rgba(255,107,44,.14)}
+@media(max-width:380px){.metric-card{padding:12px 9px}.metric-card strong{font-size:21px}.hero-card{padding:21px}.grid{gap:7px}.node{min-height:48px}}
+
 </style>
 </head>
 <body>
 <div id="app"></div>
 <script>
-const JSONBIN_BIN_ID = "6aeb94aeffd5d16053a6ad1a";
-const JSONBIN_API_KEY = "$2a$10$syXzAqaJb8XVPR0HXnPkeh0EuE9DbB5uAzznbbdyu0CUsStNUXZq";
-
 var D=[
 ["Mi porqué","Escribe tu porqué en una nota del celular y ponla de fondo de pantalla o recordatorio.","¿Qué voy a ganar en 30 días que valga más que el cansancio de empezar?"],
 ["Mi meta clara","Completa: “En 30 días quiero ___ y lo voy a lograr entrenando ___ días y siguiendo mi plan ___ días.”","¿Cómo sabré que lo logré? ¿Qué voy a ver, medir o sentir?"],
@@ -94,9 +110,9 @@ var D=[
 ["Comer fuera","Piensa en tu próximo evento o cena y decide antes qué pedir, cuánto y qué tomar.","¿Cómo disfruto el momento sin culpa y sin salirme del camino?"],
 ["Revisión de la semana 2","Mira tus últimos 7 días.","¿Cuántos días cumplí? ¿Cuál fue mi mejor día y cuál el más difícil? ¿Qué hábito ya se siente más fácil y qué ajuste haré?","r"],
 ["Descanso y sueño","Fija una hora para bajar el ritmo: pantallas fuera 30 minutos antes, luz baja y celular lejos de la cama.","Dormir poco aumenta el hambre y baja la energía. ¿Cuánto dormí en promedio y qué puedo mejorar?"],
-["Muévete más","Suma movimiento al día: escaleras, caminar 10 minutos después de comer, estirarte entre reuniones.","¿Qué dois mini movimientos puedo volver costumbre?"],
+["Muévete más","Suma movimiento al día: escaleras, caminar 10 minutos después de comer, estirarte entre reuniones.","¿Qué dos mini movimientos puedo volver costumbre?"],
 ["Plan para días difíciles","Define tu versión mínima para días malos: qué como, cómo me muevo y qué frase me digo.","¿Qué obstáculo apareció hoy y cómo lo resolví?"],
-["Carta a mi yo del día 1","Escribe una carta corta a la persona que empezó este camino.","¿Qué aprendí que me hubiera gustaría saber el primer día?"],
+["Carta a mi yo del día 1","Escribe una carta corta a la persona que empezó este camino.","¿Qué aprendí que me hubiera gustado saber el primer día?"],
 ["Más allá de la báscula","Lista 5 avances que no son el peso: energía, ropa, fuerza, sueño, ánimo, constancia.","¿Por qué estos avances importan tanto como el número?"],
 ["Chequeo 2","Toma fotos y medidas de nuevo y envíalas a tu coach.","¿Qué cambió desde el día 10 y desde el día 0? ¿Qué me sorprende de mí?","c"],
 ["Revisión de la semana 3","Mira tus últimos 7 días.","¿Cuál fue mi mayor avance? ¿Qué todavía me cuesta y qué voy a repetir porque funciona?","r"],
@@ -107,7 +123,7 @@ var D=[
 ["Mi fin de semana ideal","Diseña tu fin de semana: cuándo entrenas, qué comes y cómo disfrutas sin perder el rumbo.","¿Qué patrón repito los fines de semana que me aleja de mi meta?"],
 ["Mi historia","Escribe en 3 líneas tu antes y tu ahora. Solo la compartes si tú quieres.","¿Qué me dije que no podía y sí pude?"],
 ["Revisión de la semana 4","Mira tus últimos 7 días.","¿Cuál fue mi mejor hábito de estas 4 semanas, qué aprendí de mí y qué quiero seguir mejorando?","r"],
-["Lo que sigue","Define tu siguiente meta (30 a 90 days) y 3 acciones concretas para la primera semana.","¿Qué necesito para sostener este ritmo y qué le pido a mi coach?"],
+["Lo que sigue","Define tu siguiente meta (30 a 90 días) y 3 acciones concretas para la primera semana.","¿Qué necesito para sostener este ritmo y qué le pido a mi coach?"],
 ["Chequeo final","Toma tus fotos y medidas finales y envíalas a tu coach.","¿Cuál es mi mayor logro y qué descubrí de mí en estos 30 días?","c"]
 ];
 var M=[["peso","Peso (kg)"],["cintura","Cintura (cm)"],["cadera","Cadera (cm)"],["pecho","Pecho (cm)"],["brazo","Brazo (cm)"],["muslo","Muslo (cm)"]];
@@ -117,24 +133,16 @@ var GOALS=["Bajar de peso","Aumentar masa muscular","Más energía y hábitos","
 var S=load(),view=S.on?"map":"start",cur=1,step=0;
 
 function load(){try{return JSON.parse(localStorage.getItem("c30"))||{}}catch(e){return{}}}
-function save(){try{localStorage.setItem("c30",JSON.stringify(S))}catch(e){}sincronizarConNube()}
-function sincronizarConNube(){
-  if(!S.name) return;
-  fetch("https://api.jsonbin.io/v3/b/"+JSONBIN_BIN_ID+"/latest",{headers:{"X-Master-Key":JSONBIN_API_KEY}})
-  .then(res=>res.json()).then(data=>{
-    let lista = Array.isArray(data.record) ? data.record : (Array.isArray(data.record.alumnos) ? data.record.alumnos : []);
-    let usuarioActual = { name: S.name, goal: S.goal || "No especificado", diasCompletados: done(), xp: xp(), ultimaActualizacion: new Date().toISOString() };
-    let index = lista.findIndex(u => u.name && u.name.toLowerCase() === usuarioActual.name.toLowerCase());
-    if(index >= 0) { lista[index] = usuarioActual; } else { lista.push(usuarioActual); }
-    fetch("https://api.jsonbin.io/v3/b/"+JSONBIN_BIN_ID,{method:"PUT",headers:{"Content-Type":"application/json","X-Master-Key":JSONBIN_API_KEY},body:JSON.stringify(lista)})
-    .catch(err=>console.error("Error sincronizando:", err));
-  }).catch(err=>console.error("Error obteniendo datos:", err));
-}
+function save(){try{localStorage.setItem("c30",JSON.stringify(S))}catch(e){console.warn("No se pudo guardar localmente",e)}}
 
 function dd(n){S.days=S.days||{};return S.days[n]||(S.days[n]={c:[0,0,0,0],e:5,a:5,w:"",r:"",m:{},d:0})}
 function esc(t){return String(t||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;")}
 function done(){var c=0;for(var i=1;i<=30;i++)if(S.days&&S.days[i]&&S.days[i].d)c++;return c}
-function xp(){var t=0;for(var i=1;i<=30;i++){var x=S.days&&S.days[i];if(x&&x.d)t+=50+10*x.c.reduce(function(a,b){return a+b},0)}return t}
+function habitCount(){var n=0;for(var i=1;i<=30;i++){var x=S.days&&S.days[i];if(x&&x.c)n+=x.c.reduce(function(a,b){return a+b},0)}return n}
+function habitTotal(){return 120}
+function habitPct(){return Math.round(habitCount()/habitTotal()*100)}
+function streak(){var n=0;for(var i=1;i<=30;i++){var x=S.days&&S.days[i];if(x&&x.d)n++;else break}return n}
+function xp(){var t=0;for(var i=1;i<=30;i++){var x=S.days&&S.days[i];if(x){t+=10*(x.c||[]).reduce(function(a,b){return a+b},0);if(x.d)t+=50}}return t}
 function lvl(n){return n>=30?"Leyenda":n>=20?"Imparable":n>=10?"Constante":"Explorador"}
 function cur1(){for(var i=1;i<=30;i++)if(!(S.days&&S.days[i]&&S.days[i].d))return i;return 30}
 function ph(n){return n<=10?0:n<=20?1:2}
@@ -156,21 +164,24 @@ function wipe(b){if(b._a){try{localStorage.removeItem("c30")}catch(e){}S={};go("
 function render(){var a=document.getElementById("app"),h="";
 if(view=="start"){var n=3;
 h+='<div class="top"><button class="back" aria-label="Atrás" onclick="pv()" '+(step?"":"style=visibility:hidden")+'>←</button><div class="dots">'+[0,1,2].map(function(i){return '<i class="'+(i<=step?"on":"")+'"></i>'}).join("")+"</div></div>";
-if(step==0){h+='<div class="big">⚡</div><h1>Tus 30 días empiezan aquí</h1><p>Una misión corta por día para enfocarte, manejar la ansiedad y construir hábitos sólidos. Tú pones 10 minutos, yo te guío.</p><div class="card"><label for="nm">¿Cómo te llamas?</label><input id="nm" type="text" value="'+esc(S.name)+'" oninput="sv(\'name\',this.value)"><label>¿Cuál es tu objetivo principal?</label><div class="chips">'+GOALS.map(function(g){return '<button class="chip '+(S.goal==g?"on":"")+'" onclick="goal(\''+g+'\')">'+g+"</button>"}).join("")+'</div></div><button class="btn" onclick="nx()">Continuar</button>'}
+if(step==0){h+='<div class="big">⚡</div><h1>Tus 30 días empiezan aquí</h1><p>Una misión corta por día para enfocarte, acompañarte y construir hábitos sólidos. Tú pones 10 minutos; este cuaderno te guía.</p><p class="small privacy-note">Tus registros se guardan en este dispositivo. Usa una copia de seguridad antes de cambiar de navegador o equipo.</p><div class="card"><label for="nm">¿Cómo te llamas?</label><input id="nm" type="text" value="'+esc(S.name)+'" oninput="sv(\'name\',this.value)"><label>¿Cuál es tu objetivo principal?</label><div class="chips">'+GOALS.map(function(g){return '<button class="chip '+(S.goal==g?"on":"")+'" onclick="goal(\''+g+'\')">'+g+"</button>"}).join("")+'</div></div><button class="btn" onclick="nx()">Continuar</button>'}
 else if(step==1){h+='<h2>Tu porqué profundo</h2><p>Escribe tres “porqués” seguidos. Ej.: quiero bajar de peso → para sentirme cómodo/a con mi ropa → para recuperar mi seguridad.</p><div class="card"><textarea id="wy" aria-label="Mi porqué" oninput="sv(\'why\',this.value)">'+esc(S.why)+'</textarea></div><button class="btn" onclick="nx()">Siguiente</button>'}
 else{S.m0=S.m0||{};h+='<h2>Tu punto de partida</h2><p>Mide con la misma ropa y a la misma hora. Puedes dejarlo vacío y llenarlo después. Recuerda tomar fotos de frente, perfil y espalda.</p><div class="card">'+mInputs(S.m0)+'</div><button class="btn" onclick="S.on=1;save();go(\'map\')">Empezar el día 1</button>'}
 a.innerHTML=h;if(step==2)bindM(S.m0);return}
 if(view=="map"){var d=done(),c=cur1();
-h+='<div class="card"><h2>Hola, '+esc(S.name||"campeón/a")+' 🔥</h2><div class="bar"><i style="width:'+Math.round(d/30*100)+'%"></i></div><div class="stats"><span>'+d+' de 30 días</span><span>'+lvl(d)+'</span><span>'+xp()+' XP</span></div>'+(d<30?'<button class="btn" onclick="go(\'day\','+c+')">Continuar día '+c+"</button>":'<button class="btn" onclick="go(\'end\')">Ver mi resultado final 🏆</button>')+"</div>";
-for(var p=0;p<3;p++){h+='<h3 style="color:'+PH[p][1]+'; margin-top:20px;">'+PH[p][0]+'</h3><div class="grid">';for(var i=p*10+1;i<=p*10+10;i++){var x=S.days&&S.days[i],t=D[i-1][3];h+='<button class="node '+(x&&x.d?"done":i==c?"now":"")+'" onclick="go(\'day\','+i+')" aria-label="Día '+i+'">'+(x&&x.d?"✓":i)+(t=="c"?"<small>📸</small>":t=="r"?"<small>⭐</small>":"")+"</button>"}h+="</div>"}
+h+='<div class="hero-card"><div class="hero-top"><span class="eyebrow">TU PROCESO · 30 DÍAS</span><span class="level-pill">✦ '+lvl(d)+'</span></div><h1>Hola, '+esc(S.name||"campeón/a")+'.</h1><p class="hero-copy">Un día a la vez. Cada pequeño compromiso cuenta.</p><div class="progress-head"><span>Tu avance</span><strong>'+Math.round(d/30*100)+'%</strong></div><div class="bar"><i style="width:'+Math.round(d/30*100)+'%"></i></div><div class="stats"><span>'+d+' / 30 días</span><span>'+xp()+' XP acumulados</span></div>'+(d<30?'<button class="btn" onclick="go(\'day\','+c+')">Continuar con el día '+c+' <span>→</span></button>':'<button class="btn" onclick="go(\'end\')">Ver mi resultado final 🏆</button>')+'</div>';
+h+='<div class="metric-grid"><div class="metric-card"><span class="metric-icon">🔥</span><strong>'+streak()+'</strong><span>Racha de días</span></div><div class="metric-card"><span class="metric-icon">✓</span><strong>'+habitCount()+'<small>/120</small></strong><span>Hábitos cumplidos</span></div><div class="metric-card"><span class="metric-icon">⚡</span><strong>'+xp()+'</strong><span>Puntos XP</span></div></div>';
+h+='<div class="card habit-overview"><div class="section-kicker">CONSTANCIA</div><div class="row"><h3>Mis hábitos del reto</h3><strong>'+habitPct()+'%</strong></div><div class="bar habit-bar"><i style="width:'+habitPct()+'%"></i></div><p>Has completado '+habitCount()+' de 120 registros posibles. No busques perfección: construye repetición.</p></div>';
+h+='<div class="achievement-strip"><div><span class="section-kicker">INSIGNIAS DESBLOQUEADAS</span><div class="badges-row">'+(d>=1?'<span class="achievement earned" title="Primer paso">🌱<small>Inicio</small></span>':'<span class="achievement" title="Primer paso">🌱<small>Inicio</small></span>')+(d>=7?'<span class="achievement earned" title="Una semana">🔥<small>7 días</small></span>':'<span class="achievement" title="Una semana">🔥<small>7 días</small></span>')+(d>=15?'<span class="achievement earned" title="Mitad del camino">💎<small>15 días</small></span>':'<span class="achievement" title="Mitad del camino">💎<small>15 días</small></span>')+(d>=30?'<span class="achievement earned" title="Reto completado">🏆<small>Leyenda</small></span>':'<span class="achievement" title="Reto completado">🏆<small>Leyenda</small></span>')+'</div></div></div>';
+for(var p=0;p<3;p++){h+='<h3 class="phase-title" style="--phase:'+PH[p][1]+'">'+PH[p][0]+'</h3><div class="grid">';for(var i=p*10+1;i<=p*10+10;i++){var x=S.days&&S.days[i],t=D[i-1][3];h+='<button class="node '+(x&&x.d?"done":i==c?"now":"")+'" onclick="go(\'day\','+i+')" aria-label="Día '+i+'">'+(x&&x.d?"✓":i)+(t=="c"?"<small>📸</small>":t=="r"?"<small>⭐</small>":"")+"</button>"}h+="</div>"}
 h+='<button class="btn alt" id="sh" onclick="share()" style="margin-top:24px;">Compartir aplicación</button><button class="link" onclick="wipe(this)">Borrar mis datos</button>';a.innerHTML=h;return}
 if(view=="day"){var it=D[cur-1],x=dd(cur),chq=it[3]=="c",st=["m","r"].concat(chq?["x"]:[],["c","ok"]),k=st[step],col=PH[ph(cur)][1];
 h+='<div class="top"><button class="back" aria-label="Atrás" onclick="pv()">←</button><div class="dots">'+st.slice(0,-1).map(function(_,i){return '<i class="'+(i<=step?"on":"")+'"></i>'}).join("")+"</div></div>";
-if(k=="m"){h+='<span class="tag" style="background:'+col+'">Día '+cur+" de 30"+(it[3]=="r"?" ⭐ Revisión":"")+(chq?" 📸 Chequeo":"")+'</span><h2>'+it[0]+'</h2><div class="card"><h3>Tu misión</h3><p>'+it[1]+'</p></div><p class="small">Si hoy dispones de poco tiempo, lee la pregunta y responde en una sola frase.</p><button class="btn" onclick="nx()">Hecho, siguiente</button>'}
+if(k=="m"){h+='<div class="notebook-heading"><span class="eyebrow">TU CUADERNO · '+PH[ph(cur)][0].toUpperCase()+'</span><span class="day-stamp">DÍA '+String(cur).padStart(2,'0')+' / 30</span></div><span class="tag" style="background:'+col+'">Día '+cur+" de 30"+(it[3]=="r"?" ⭐ Revisión":"")+(chq?" 📸 Chequeo":"")+'</span><h2>'+it[0]+'</h2><div class="card"><h3>Tu misión</h3><p>'+it[1]+'</p></div><p class="small">Si hoy dispones de poco tiempo, lee la pregunta y responde en una sola frase.</p><button class="btn" onclick="nx()">Hecho, siguiente</button>'}
 else if(k=="r"){h+='<h2>Para pensar</h2><div class="card"><p>'+it[2]+'</p><textarea aria-label="Mi respuesta" placeholder="Escribe aquí de forma honesta..." oninput="sd(\'r\',this.value)">'+esc(x.r)+'</textarea></div><button class="btn" onclick="nx()">Siguiente</button>'}
 else if(k=="x"){h+='<h2>Fotos y medidas 📏</h2><p>Toma las 3 fotos clave y registra tus medidas corporales.</p><div class="card">'+mInputs(x.m)+'</div><button class="btn alt" id="cp" onclick="copyM()">Copiar medidas para mi coach</button><button class="btn" onclick="nx()">Siguiente</button>'}
-else if(k=="c"){h+='<h2>Cierra tu día</h2><div>'+CK.map(function(q,i){return '<button class="chk '+(x.c[i]?"on":"")+'" onclick="tg('+i+')"><b>'+q[0]+"</b>"+q[1]+"</button>"}).join("")+'</div><div class="card"><div class="row"><span>Energía</span><span id="ev">'+x.e+'/10</span></div><input type="range" min="0" max="10" value="'+x.e+'" aria-label="Energía" oninput="sd(\'e\',+this.value);ev.textContent=this.value+\'/10\'" style="margin:8px 0 16px"><div class="row"><span>Ansiedad</span><span id="av">'+x.a+'/10</span></div><input type="range" min="0" max="10" value="'+x.a+'" aria-label="Ansiedad" oninput="sd(\'a\',+this.value);av.textContent=this.value+\'/10\'" style="margin:8px 0 16px"><label for="wn">Una victoria de hoy</label><input id="wn" type="text" value="'+esc(x.w)+'" oninput="sd(\'w\',this.value)"></div><button class="btn" onclick="finish()">Terminar el día 🎉</button>'}
-else{var last=cur==30;h+='<div class="big">'+(last?"🏆":"🔥")+'</div><h2 style="text-align:center">'+(last?"¡Lo lograste!":"¡Día "+cur+" completado!")+'</h2><p style="text-align:center">Llevas '+done()+' de 30 días y '+xp()+' XP. La constancia supera a la intensidad.</p>'+(done()==10||done()==20?'<div class="card" style="text-align:center"><h3>Nuevo nivel: '+lvl(done())+' ⭐</h3></div>':"")+'<button class="btn" onclick="'+(last?"go('end')":"go('day',"+(cur+1)+")")+'">'+(last?"Ver mi resultado":"Siguiente día")+'</button><button class="btn alt" onclick="go(\'map\')">Volver al mapa</button>'}
+else if(k=="c"){h+='<div class="notebook-heading"><span class="eyebrow">CIERRE DEL DÍA</span><span class="day-stamp">'+x.c.reduce(function(a,b){return a+b},0)+' / 4 hábitos</span></div><h2>¿Cómo te acompañaste hoy?</h2><p>Marca lo que lograste. Cada hábito suma 10 XP y fortalece tu constancia.</p><div>'+CK.map(function(q,i){return '<button class="chk '+(x.c[i]?"on":"")+'" onclick="tg('+i+')"><b>'+q[0]+"</b>"+q[1]+"</button>"}).join("")+'</div><div class="card"><div class="row"><span>Energía</span><span id="ev">'+x.e+'/10</span></div><input type="range" min="0" max="10" value="'+x.e+'" aria-label="Energía" oninput="sd(\'e\',+this.value);ev.textContent=this.value+\'/10\'" style="margin:8px 0 16px"><div class="row"><span>Ansiedad</span><span id="av">'+x.a+'/10</span></div><input type="range" min="0" max="10" value="'+x.a+'" aria-label="Ansiedad" oninput="sd(\'a\',+this.value);av.textContent=this.value+\'/10\'" style="margin:8px 0 16px"><label for="wn">Una victoria de hoy</label><input id="wn" type="text" value="'+esc(x.w)+'" oninput="sd(\'w\',this.value)"></div><button class="btn" onclick="finish()">Terminar el día 🎉</button>'}
+else{var last=cur==30;h+='<div class="big">'+(last?"🏆":"🔥")+'</div><h2 style="text-align:center">'+(last?"¡Lo lograste!":"¡Día "+cur+" completado!")+'</h2><p style="text-align:center">Llevas '+done()+' de 30 días y '+xp()+' XP. La constancia supera a la intensidad; siempre puedes retomar.</p>'+(done()==10||done()==20?'<div class="card" style="text-align:center"><h3>Nuevo nivel: '+lvl(done())+' ⭐</h3></div>':"")+'<button class="btn" onclick="'+(last?"go('end')":"go('day',"+(cur+1)+")")+'">'+(last?"Ver mi resultado":"Siguiente día")+'</button><button class="btn alt" onclick="go(\'map\')">Volver al mapa</button>'}
 a.innerHTML=h;if(k=="x")bindM(x.m);return}
 if(view=="end"){h+='<div class="big">🏆</div><h1>Tus 30 días</h1><p>'+esc(S.name)+', mira lo que construiste. Los resultados son el reflejo directo de tus decisiones diarias.</p><div class="card"><table><tr><th></th><th>Día 0</th><th>10</th><th>20</th><th>30</th></tr>'+M.map(function(m){var k=m[0];return "<tr><td>"+m[1].split(" ")[0]+"</td><td>"+esc((S.m0||{})[k]||"-")+"</td>"+[10,20,30].map(function(n){return "<td>"+esc(((S.days&&S.days[n]&&S.days[n].m)||{})[k]||"-")+"</td>"}).join("")+"</tr>"}).join("")+"</div></div>"+(S.why?'<div class="card"><h3>Tu porqué</h3><p>'+esc(S.why)+'</p></div>':"")+'<button class="btn" onclick="go(\'map\')">Volver al mapa</button><button class="btn alt" id="sh" onclick="share()" style="margin-top:12px">Compartir resultado</button>';a.innerHTML=h}}
 render();
