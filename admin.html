@@ -125,31 +125,47 @@
     mostrarPanel();
   }
 
-  async function cargarAlumnos() {
-    try {
-      const res = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
-        headers: { "X-Master-Key": JSONBIN_API_KEY }
-      });
-      const data = await res.json();
-      const user = data.record;
-
-      const tbody = document.getElementById("lista-alumnos");
-      tbody.innerHTML = `
-        <tr>
-          <td><b>${user.nombre}</b></td>
-          <td>${user.objetivo}</td>
-          <td>
-            ${user.progresos}
-            <div class="progress-bar"><div class="progress-fill" style="width: ${(parseInt(user.progresos)/30)*100}%"></div></div>
-          </td>
-          <td><span class="badge">${user.nivel}</span> (${user.xp} XP)</td>
-          <td>🟢 Activo</td>
-        </tr>
-      `;
-    } catch (e) {
-      console.error("Error al obtener datos:", e);
+async function cargarAlumnos() {
+  try {
+    const res = await fetch(`https://api.jsonbin.io/v3/b/${JSONBIN_BIN_ID}/latest`, {
+      headers: { "X-Master-Key": JSONBIN_API_KEY }
+    });
+    const data = await res.json();
+    
+    // Extraer la lista sin importar si viene directa o en un objeto
+    let alumnos = [];
+    if (Array.isArray(data)) {
+      alumnos = data;
+    } else if (data.record && Array.isArray(data.record)) {
+      alumnos = data.record;
+    } else if (data.record && Array.isArray(data.record.alumnos)) {
+      alumnos = data.record.alumnos;
+    } else if (data.record) {
+      alumnos = [data.record]; // Por si es un solo usuario plano
     }
+
+    const tbody = document.getElementById("lista-alumnos");
+    if (!tbody) return;
+
+    if (alumnos.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="5" style="text-align:center; color:var(--soft);">No hay alumnos registrados todavía</td></tr>';
+      return;
+    }
+
+    tbody.innerHTML = alumnos.map(u => `
+      <tr>
+        <td style="font-weight:700; text-align:left;">${u.name || u.nombre || "Sin nombre"}</td>
+        <td style="text-align:left;">${u.goal || u.objetivo || "-"}</td>
+        <td>${u.diasCompletados !== undefined ? u.diasCompletados : 0} / 30 días</td>
+        <td>${u.xp || 0} XP</td>
+        <td><span style="color:var(--ok);">Activo</span></td>
+      </tr>
+    `).join("");
+
+  } catch (e) {
+    console.error("Error al obtener datos:", e);
   }
+}
 </script>
 </body>
 </html>
