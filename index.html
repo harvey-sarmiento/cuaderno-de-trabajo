@@ -1,132 +1,183 @@
-var D=\[
-\["Mi porqué","Escribe tu porqué en una nota del celular y ponla de fondo de pantalla o recordatorio.","¿Qué voy a ganar en 30 días que valga más que el cansancio de empezar?"\],
-\["Mi meta clara","Completa: “En 30 días quiero \__\_ y lo voy a lograr entrenando \__\_ días y siguiendo mi plan \__\_ días.”","¿Cómo sabré que lo logré? ¿Qué voy a ver, medir o sentir?"\],
-\["Mi semana real","Abre tu agenda y bloquea los horarios de comidas, entreno y de esta app, como si fueran reuniones.","¿Qué momento de mi semana suele sabotearme?"\],
-\["Preparo mi entorno","Deja a la vista lo que está en tu plan, guarda lo que te tienta y prepara una comida para mañana.","¿Qué puedo dejar listo hoy para que mañana sea más fácil?"\],
-\["¿Hambre o ansiedad?","Cada vez que quieras comer fuera del plan, toma un vaso de agua y espera 10 minutos. Anota qué sentías y qué pasaba.","Hambre física: sube poco a poco y cualquier comida sirve. Ansiedad: llega de golpe y pide algo específico. ¿Qué viste hoy?"\],
-\["Mis excusas y mi plan B","Escribe tus 3 excusas favoritas y una respuesta práctica para cada una. Ej.: “No tengo tiempo” → 15 minutos de entreno en casa.","¿Qué le diría a un amigo que me dice esas mismas excusas?"\],
-\["Revisión de la semana 1","Mira tus últimos 7 días con honestidad.","¿Cuántos días cumplí mi plan? ¿Qué me funcionó, qué me costó, qué ajuste haré y de qué me siento orgulloso/a?","r"\],
-\["No estoy solo/a","Cuéntale tu meta a una persona de confianza o escríbele a tu coach con una duda o un avance.","¿Quién me apoya? ¿Quién me sabotea sin querer? ¿Cómo puedo pedir lo que necesito?"\],
-\["Mi identidad","Completa y di en voz alta: “Soy una persona que \__\_”. Ej.: cumple lo que se promete, se cuida.","¿Qué hice esta semana que haría una persona así?"\],
-\["Chequeo 1","Toma tus fotos (frente, perfil y espalda, misma ropa y luz) y tus medidas. Envíalas a tu coach.","¿Qué cambió? ¿Qué no cambió todavía (y está bien)? ¿Cómo me siento comparado con el día 0?","c"\],
-\["Mi ritual de mañana","Diseña una rutina de 10 minutos al despertar: agua, estirarte, repasar tu porqué y tu plan del día.","¿Cómo quiero empezar mis días para sentirme en control?"\],
-\["Pausa anti-ansiedad","Hazla 3 veces hoy: inhala 4 segundos, sostén 4, exhala 6. Repite 6 veces.","¿En qué momento me sirvió más? ¿Cómo cambió lo que sentía?"\],
-\["Comer fuera","Piensa en tu próximo evento o cena y decide antes qué pedir, cuánto y qué tomar.","¿Cómo disfruto el momento sin culpa y sin salirme del camino?"\],
-\["Revisión de la semana 2","Mira tus últimos 7 días.","¿Cuántos días cumplí? ¿Cuál fue mi mejor día y cuál el más difícil? ¿Qué hábito ya se siente más fácil y qué ajuste haré?","r"\],
-\["Descanso y sueño","Fija una hora para bajar el ritmo: pantallas fuera 30 minutos antes, luz baja y celular lejos de la cama.","Dormir poco aumenta el hambre y baja la energía. ¿Cuánto dormí en promedio y qué puedo mejorar?"\],
-\["Muévete más","Suma movimiento al día: escaleras, caminar 10 minutos después de comer, estirarte entre reuniones.","¿Qué dois mini movimientos puedo volver costumbre?"\],
-\["Plan para días difíciles","Define tu versión mínima para días malos: qué como, cómo me muevo y qué frase me digo.","¿Qué obstáculo apareció hoy y cómo lo resolví?"\],
-\["Carta a mi yo del día 1","Escribe una carta corta a la persona que empezó este camino.","¿Qué aprendí que me hubiera gustado saber el primer día?"\],
-\["Más allá de la báscula","Lista 5 avances que no son el peso: energía, ropa, fuerza, sueño, ánimo, constancia.","¿Por qué estos avances importan tanto como el número?"\],
-\["Chequeo 2","Toma fotos y medidas de nuevo y envíalas a tu coach.","¿Qué cambió desde el día 10 y desde el día 0? ¿Qué me sorprende de mí?","c"\],
-\["Revisión de la semana 3","Mira tus últimos 7 días.","¿Cuál fue mi mayor avance? ¿Qué todavía me cuesta y qué voy a repetir porque funciona?","r"\],
-\["Mis disparadores","Identifica qué emociones te llevan a comer fuera del plan o a saltarte el entreno: estrés, aburrimiento, cansancio, soledad.","¿Qué necesito realmente cuando aparece esa emoción y qué puedo hacer en su lugar?"\],
-\["Tropezar no es fracasar","Si te saliste del plan, escribe qué pasó, qué aprendiste y tu siguiente acción dentro del plan. Si no, escribe cómo te hablarías si pasara.","¿Me hablo con la misma amabilidad con que le hablaría a alguien que quiero?"\],
-\["Hábitos innegociables","Elige 3 hábitos que vas a conservar pase lo que pase.","¿A qué hora y en qué lugar los haré para que sean automáticos?"\],
-\["Gratitud con mi cuerpo","Escribe 5 cosas que tu cuerpo hace por ti cada día, sin importar su apariencia.","¿Cómo cambia mi motivación cuando me cuido con respeto y no con castigo?"\],
-\["Mi fin de semana ideal","Diseña tu fin de semana: cuándo entrenas, qué comes y cómo disfrutas sin perder el rumbo.","¿Qué patrón repito los fines de semana que me aleja de mi meta?"\],
-\["Mi historia","Escribe en 3 líneas tu antes y tu ahora. Solo la compartes si tú quieres.","¿Qué me dije que no podía y sí pude?"\],
-\["Revisión de la semana 4","Mira tus últimos 7 días.","¿Cuál fue mi mejor hábito de estas 4 semanas, qué aprendí de mí y qué quiero seguir mejorando?","r"\],
-\["Lo que sigue","Define tu siguiente meta (30 a 90 days) y 3 acciones concretas para la primera semana.","¿Qué necesito para sostener este ritmo y qué le pido a mi coach?"\],
-\["Chequeo final","Toma tus fotos y medidas finales y envíalas a tu coach.","¿Cuál es mi mayor logro y qué descubrí de mí en estos 30 días?","c"\]
-\];
-var M=\[\["peso","Peso (kg)"\],\["cintura","Cintura (cm)"\],\["cadera","Cadera (cm)"\],\["pecho","Pecho (cm)"\],\["brazo","Brazo (cm)"\],\["muslo","Muslo (cm)"\]\];
-var CK=\[\["💧","Agua"\],\["🍽️","Comidas del plan"\],\["🏃","Entreno o movimiento"\],\["😴","Dormí lo suficiente"\]\];
-var PH=\[\["Fase 1: Fundación","var(--p)"\],\["Fase 2: Constancia","var(--gold)"\],\["Fase 3: Identidad","var(--ok)"\]\];
-var GOALS=\["Bajar de peso","Aumentar masa muscular","Más energía y hábitos","Otro"\];
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mis 30 días</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800;900&display=swap">
+<style>
+:root{
+  --bg:#080C10;
+  --card:#121820;
+  --card-hover:#1A232F;
+  --ink:#F3F6F9;
+  --soft:#8A9BA8;
+  --line:#1E293B;
+  --p:#FF5C00;
+  --p-glow:rgba(255, 92, 0, 0.25);
+  --gold:#F5A623;
+  --ok:#00C896;
+  --box-shadow:0 10px 30px rgba(0,0,0,0.5);
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:inherit}
+html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',sans-serif;font-weight:500;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+#app{max-width:480px;margin:0 auto;padding:20px 16px 60px}
+h1,h2,h3{font-weight:900;line-height:1.15;margin:0 0 12px;letter-spacing:-0.02em}
+h1{font-size:32px}h2{font-size:24px}h3{font-size:17px}
+p{margin:0 0 14px;color:var(--soft)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;margin-bottom:16px;box-shadow:var(--box-shadow);transition:border-color .2s}
+.btn{display:flex;align-items:center;justify-content:center;width:100%;border:0;border-radius:16px;padding:16px 20px;font:inherit;font-weight:800;font-size:16px;background:var(--p);color:#fff;cursor:pointer;margin-top:14px;box-shadow:0 4px 20px var(--p-glow);transition:transform .1s,opacity .2s}
+.btn:active{transform:scale(0.98)}
+.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+.btn.alt:hover{background:var(--card-hover)}
+.btn:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.tag{display:inline-block;border-radius:99px;padding:4px 14px;font-size:13px;font-weight:800;color:#fff;margin-bottom:12px;letter-spacing:0.03em;text-transform:uppercase}
+input[type=text],input[type=number],textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:14px;transition:border-color .2s}
+input[type=text]:focus,input[type=number]:focus,textarea:focus{border-color:var(--p);outline:none}
+textarea{min-height:120px;resize:vertical}
+label{display:block;font-weight:700;font-size:14px;color:var(--soft);margin:14px 0 6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);background:var(--bg);color:var(--soft);border-radius:12px;padding:10px 16px;font:inherit;font-weight:700;cursor:pointer;transition:all .2s}
+.chip.on{background:var(--p-glow);border-color:var(--p);color:var(--ink)}
+.top{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.top .back{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;width:44px;height:44px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.bar{height:10px;border-radius:99px;background:var(--line);overflow:hidden;margin-top:8px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--p),var(--gold));border-radius:99px;transition:width .4s cubic-bezier(0.4,0,0.2,1)}
+.stats{display:flex;justify-content:space-between;font-size:13px;color:var(--soft);margin-top:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}
+.node{aspect-ratio:1;border-radius:16px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;font-weight:800;font-size:16px;cursor:pointer;position:relative;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.node:hover{border-color:var(--soft)}
+.node.done{background:rgba(0,200,150,0.1);border-color:var(--ok);color:var(--ok)}
+.node.now{border-color:var(--p);box-shadow:0 0 0 3px var(--p-glow)}
+.node small{position:absolute;right:4px;top:4px;font-size:11px}
+.dots{display:flex;gap:6px;flex:1}.dots i{flex:1;height:6px;border-radius:9px;background:var(--line);transition:background .3s}.dots i.on{background:var(--p)}
+.chk{display:flex;align-items:center;gap:14px;width:100%;text-align:left;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:16px;padding:14px;margin-bottom:10px;font:inherit;font-weight:700;cursor:pointer;transition:all .2s}
+.chk.on{border-color:var(--ok);background:rgba(0,200,150,0.06)}
+.chk b{font-size:20px;display:flex;align-items:center;justify-content:center;width:28px}
+input[type=range]{width:100%;accent-color:var(--p);height:6px;background:var(--line);border-radius:99px}
+.row{display:flex;justify-content:space-between;font-weight:700;font-size:14px}
+.big{font-size:56px;text-align:center;margin:10px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid var(--line);padding:10px 6px;text-align:right}th:first-child,td:first-child{text-align:left}th{color:var(--soft);font-weight:700}
+.cf{position:fixed;top:-20px;width:8px;height:12px;border-radius:3px;pointer-events:none;animation:fall 1.8s ease-in forwards;z-index:9}
+@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+@media(prefers-reduced-motion:reduce){.cf{display:none}.bar i{transition:none}}
+.small{font-size:13px;color:var(--soft);text-align:center}
+.link{background:none;border:0;color:var(--soft);font:inherit;text-decoration:underline;cursor:pointer;padding:10px;display:block;margin:0 auto;font-size:13px}
+.link:hover{color:var(--ink)}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const JSONBIN_BIN_ID = "6aeb59c5ffd5d16053a602cc";
+const JSONBIN_API_KEY = "$2a$10$syXzAqaJb8XVPR0HXnPkeh0EuE9DbB5uAzznbbdyu0CUsStNUXZq";
+
+var D=[
+["Mi porqué","Escribe tu porqué en una nota del celular y ponla de fondo de pantalla o recordatorio.","¿Qué voy a ganar en 30 días que valga más que el cansancio de empezar?"],
+["Mi meta clara","Completa: “En 30 días quiero ___ y lo voy a lograr entrenando ___ días y siguiendo mi plan ___ días.”","¿Cómo sabré que lo logré? ¿Qué voy a ver, medir o sentir?"],
+["Mi semana real","Abre tu agenda y bloquea los horarios de comidas, entreno y de esta app, como si fueran reuniones.","¿Qué momento de mi semana suele sabotearme?"],
+["Preparo mi entorno","Deja a la vista lo que está en tu plan, guarda lo que te tienta y prepara una comida para mañana.","¿Qué puedo dejar listo hoy para que mañana sea más fácil?"],
+["¿Hambre o ansiedad?","Cada vez que quieras comer fuera del plan, toma un vaso de agua y espera 10 minutos. Anota qué sentías y qué pasaba.","Hambre física: sube poco a poco y cualquier comida sirve. Ansiedad: llega de golpe y pide algo específico. ¿Qué viste hoy?"],
+["Mis excusas y mi plan B","Escribe tus 3 excusas favoritas y una respuesta práctica para cada una. Ej.: “No tengo tiempo” → 15 minutos de entreno en casa.","¿Qué le diría a un amigo que me dice esas mismas excusas?"],
+["Revisión de la semana 1","Mira tus últimos 7 días con honestidad.","¿Cuántos días cumplí mi plan? ¿Qué me funcionó, qué me costó, qué ajuste haré y de qué me siento orgulloso/a?","r"],
+["No estoy solo/a","Cuéntale tu meta a una persona de confianza o escríbele a tu coach con una duda o un avance.","¿Quién me apoya? ¿Quién me sabotea sin querer? ¿Cómo puedo pedir lo que necesito?"],
+["Mi identidad","Completa y di en voz alta: “Soy una persona que ___”. Ej.: cumple lo que se promete, se cuida.","¿Qué hice esta semana que haría una persona así?"],
+["Chequeo 1","Toma tus fotos (frente, perfil y espalda, misma ropa y luz) y tus medidas. Envíalas a tu coach.","¿Qué cambió? ¿Qué no cambió todavía (y está bien)? ¿Cómo me siento comparado con el día 0?","c"],
+["Mi ritual de mañana","Diseña una rutina de 10 minutos al despertar: agua, estirarte, repasar tu porqué y tu plan del día.","¿Cómo quiero empezar mis días para sentirme en control?"],
+["Pausa anti-ansiedad","Hazla 3 veces hoy: inhala 4 segundos, sostén 4, exhala 6. Repite 6 veces.","¿En qué momento me sirvió más? ¿Cómo cambió lo que sentía?"],
+["Comer fuera","Piensa en tu próximo evento o cena y decide antes qué pedir, cuánto y qué tomar.","¿Cómo disfruto el momento sin culpa y sin salirme del camino?"],
+["Revisión de la semana 2","Mira tus últimos 7 días.","¿Cuántos días cumplí? ¿Cuál fue mi mejor día y cuál el más difícil? ¿Qué hábito ya se siente más fácil y qué ajuste haré?","r"],
+["Descanso y sueño","Fija una hora para bajar el ritmo: pantallas fuera 30 minutos antes, luz baja y celular lejos de la cama.","Dormir poco aumenta el hambre y baja la energía. ¿Cuánto dormí en promedio y qué puedo mejorar?"],
+["Muévete más","Suma movimiento al día: escaleras, caminar 10 minutos después de comer, estirarte entre reuniones.","¿Qué dois mini movimientos puedo volver costumbre?"],
+["Plan para días difíciles","Define tu versión mínima para días malos: qué como, cómo me muevo y qué frase me digo.","¿Qué obstáculo apareció hoy y cómo lo resolví?"],
+["Carta a mi yo del día 1","Escribe una carta corta a la persona que empezó este camino.","¿Qué aprendí que me hubiera gustaría saber el primer día?"],
+["Más allá de la báscula","Lista 5 avances que no son el peso: energía, ropa, fuerza, sueño, ánimo, constancia.","¿Por qué estos avances importan tanto como el número?"],
+["Chequeo 2","Toma fotos y medidas de nuevo y envíalas a tu coach.","¿Qué cambió desde el día 10 y desde el día 0? ¿Qué me sorprende de mí?","c"],
+["Revisión de la semana 3","Mira tus últimos 7 días.","¿Cuál fue mi mayor avance? ¿Qué todavía me cuesta y qué voy a repetir porque funciona?","r"],
+["Mis disparadores","Identifica qué emociones te llevan a comer fuera del plan o a saltarte el entreno: estrés, aburrimiento, cansancio, soledad.","¿Qué necesito realmente cuando aparece esa emoción y qué puedo hacer en su lugar?"],
+["Tropezar no es fracasar","Si te saliste del plan, escribe qué pasó, qué aprendiste y tu siguiente acción dentro del plan. Si no, escribe cómo te hablarías si pasara.","¿Me hablo con la misma amabilidad con que le hablaría a alguien que quiero?"],
+["Hábitos innegociables","Elige 3 hábitos que vas a conservar pase lo que pase.","¿A qué hora y en qué lugar los haré para que sean automáticos?"],
+["Gratitud con mi cuerpo","Escribe 5 cosas que tu cuerpo hace por ti cada día, sin importar su apariencia.","¿Cómo cambia mi motivación cuando me cuido con respeto y no con castigo?"],
+["Mi fin de semana ideal","Diseña tu fin de semana: cuándo entrenas, qué comes y cómo disfrutas sin perder el rumbo.","¿Qué patrón repito los fines de semana que me aleja de mi meta?"],
+["Mi historia","Escribe en 3 líneas tu antes y tu ahora. Solo la compartes si tú quieres.","¿Qué me dije que no podía y sí pude?"],
+["Revisión de la semana 4","Mira tus últimos 7 días.","¿Cuál fue mi mejor hábito de estas 4 semanas, qué aprendí de mí y qué quiero seguir mejorando?","r"],
+["Lo que sigue","Define tu siguiente meta (30 a 90 days) y 3 acciones concretas para la primera semana.","¿Qué necesito para sostener este ritmo y qué le pido a mi coach?"],
+["Chequeo final","Toma tus fotos y medidas finales y envíalas a tu coach.","¿Cuál es mi mayor logro y qué descubrí de mí en estos 30 días?","c"]
+];
+var M=[["peso","Peso (kg)"],["cintura","Cintura (cm)"],["cadera","Cadera (cm)"],["pecho","Pecho (cm)"],["brazo","Brazo (cm)"],["muslo","Muslo (cm)"]];
+var CK=[["💧","Agua"],["🍽️","Comidas del plan"],["🏃","Entreno o movimiento"],["😴","Dormí lo suficiente"]];
+var PH=[["Fase 1: Fundación","var(--p)"],["Fase 2: Constancia","var(--gold)"],["Fase 3: Identidad","var(--ok)"]];
+var GOALS=["Bajar de peso","Aumentar masa muscular","Más energía y hábitos","Otro"];
 var S=load(),view=S.on?"map":"start",cur=1,step=0;
 
 function load(){try{return JSON.parse(localStorage.getItem("c30"))||{}}catch(e){return{}}}
-function save(){
-try{
-localStorage.setItem("c30",JSON.stringify(S));
-sincronizarConNube();
-}catch(e){}
-}
-
+function save(){try{localStorage.setItem("c30",JSON.stringify(S))}catch(e){}sincronizarConNube()}
 function sincronizarConNube(){
-if(!S.name) return;
-fetch("https://api.jsonbin.io/v3/b/" + JSONBIN_BIN_ID + "/latest", {
-headers: { "X-Master-Key": JSONBIN_API_KEY }
-})
-.then(res => res.json())
-.then(data => {
-let lista = \[\];
-if(data && data.record) {
-if(Array.isArray(data.record)) lista = data.record;
-else if(data.record.alumnos && Array.isArray(data.record.alumnos)) lista = data.record.alumnos;
+  if(!S.name) return;
+  fetch("https://api.jsonbin.io/v3/b/"+JSONBIN_BIN_ID+"/latest",{headers:{"X-Master-Key":JSONBIN_API_KEY}})
+  .then(res=>res.json()).then(data=>{
+    let lista = Array.isArray(data.record) ? data.record : (Array.isArray(data.record.alumnos) ? data.record.alumnos : []);
+    let usuarioActual = { name: S.name, goal: S.goal || "No especificado", diasCompletados: done(), xp: xp(), ultimaActualizacion: new Date().toISOString() };
+    let index = lista.findIndex(u => u.name && u.name.toLowerCase() === usuarioActual.name.toLowerCase());
+    if(index >= 0) { lista[index] = usuarioActual; } else { lista.push(usuarioActual); }
+    fetch("https://api.jsonbin.io/v3/b/"+JSONBIN_BIN_ID,{method:"PUT",headers:{"Content-Type":"application/json","X-Master-Key":JSONBIN_API_KEY},body:JSON.stringify(lista)})
+    .catch(err=>console.error("Error sincronizando:", err));
+  }).catch(err=>console.error("Error obteniendo datos:", err));
 }
 
-```
-let usuarioActual = {
-  name: S.name || "Sin nombre",
-  goal: S.goal || "No especificado",
-  diasCompletados: done(),
-  xp: xp(),
-  ultimaActualizacion: new Date().toISOString()
-};
-
-let index = lista.findIndex(u => u.name && u.name.toLowerCase() === usuarioActual.name.toLowerCase());
-if(index >= 0) {
-  lista[index] = usuarioActual;
-} else {
-  lista.push(usuarioActual);
-}
-
-return fetch("https://api.jsonbin.io/v3/b/" + JSONBIN_BIN_ID, {
-  method: "PUT",
-  headers: {
-    "Content-Type": "application/json",
-    "X-Master-Key": JSONBIN_API_KEY
-  },
-  body: JSON.stringify(lista)
-});
-
-```
-
-}).catch(err => console.error("Error sincronizando:", err));
-}
-
-function dd(n){S.days=S.days||{};return S.days\[n\]||(S.days\[n\]={c:\[0,0,0,0\],e:5,a:5,w:"",r:"",m:{},d:0})}
-function esc(t){return String(t||"").replace(/&/g,"&").replace(/</g,"<").replace(/"/g,""")}
-function done(){var c=0;for(var i=1;i<=30;i++)if(S.days&&S.days\[i\]&&S.days\[i\].d)c++;return c}
-function xp(){var t=0;for(var i=1;i<=30;i++){var x=S.days&&S.days\[i\];if(x&&x.d)t+=50+10*x.c.reduce(function(a,b){return a+b},0)}return t}
+function dd(n){S.days=S.days||{};return S.days[n]||(S.days[n]={c:[0,0,0,0],e:5,a:5,w:"",r:"",m:{},d:0})}
+function esc(t){return String(t||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;")}
+function done(){var c=0;for(var i=1;i<=30;i++)if(S.days&&S.days[i]&&S.days[i].d)c++;return c}
+function xp(){var t=0;for(var i=1;i<=30;i++){var x=S.days&&S.days[i];if(x&&x.d)t+=50+10*x.c.reduce(function(a,b){return a+b},0)}return t}
 function lvl(n){return n>=30?"Leyenda":n>=20?"Imparable":n>=10?"Constante":"Explorador"}
-function cur1(){for(var i=1;i<=30;i++)if(!(S.days&&S.days\[i\]&&S.days\[i\].d))return i;return 30}
+function cur1(){for(var i=1;i<=30;i++)if(!(S.days&&S.days[i]&&S.days[i].d))return i;return 30}
 function ph(n){return n<=10?0:n<=20?1:2}
 function go(v,n){view=v;if(n)cur=n;step=0;render();window.scrollTo(0,0)}
-function sv(k,v){S\[k\]=v;save()}
-function sd(k,v){dd(cur)\[k\]=v;save()}
-function sm(o,k,v){o\[k\]=v;save()}
+function sv(k,v){S[k]=v;save()}
+function sd(k,v){dd(cur)[k]=v;save()}
+function sm(o,k,v){o[k]=v;save()}
 function goal(g){S.goal=g;save();render()}
-function tg(i){var x=dd(cur);x.c\[i\]=x.c\[i\]?0:1;save();render()}
+function tg(i){var x=dd(cur);x.c[i]=x.c[i]?0:1;save();render()}
 function nx(){step++;render();window.scrollTo(0,0)}
 function pv(){if(step>0){step--;render()}else go(view=="start"?"start":"map")}
-function mInputs(o){return ''+M.map(function(m){return ''+m\[1\]+''}).join("")+""}
-function bindM(o){document.querySelectorAll('input\[type=number\]').forEach(function(e){e.\_o=o})}
-function confetti(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;var c=\["#FF5C00","#F5A623","#00C896","#FFFFFF","#FF8A3D"\];for(var i=0;i<36;i++){var s=document.createElement("span");s.className="cf";s.style.left=Math.random()*100+"vw";s.style.background=c\[i%5\];s.style.animationDelay=Math.random()*.4+"s";document.body.appendChild(s);setTimeout(function(e){e.remove()},2600,s)}}
+function mInputs(o){return '<div class="grid2">'+M.map(function(m){return '<div><label>'+m[1]+'</label><input type="number" inputmode="decimal" value="'+esc(o[m[0]])+'" oninput="sm(this._o,\''+m[0]+'\',this.value)"></div>'}).join("")+"</div>"}
+function bindM(o){document.querySelectorAll('input[type=number]').forEach(function(e){e._o=o})}
+function confetti(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;var c=["#FF5C00","#F5A623","#00C896","#FFFFFF","#FF8A3D"];for(var i=0;i<36;i++){var s=document.createElement("span");s.className="cf";s.style.left=Math.random()*100+"vw";s.style.background=c[i%5];s.style.animationDelay=Math.random()*.4+"s";document.body.appendChild(s);setTimeout(function(e){e.remove()},2600,s)}}
 function finish(){var x=dd(cur);x.d=1;save();confetti();step++;render()}
-function copyM(){var x=dd(cur).m,t="Mis medidas del día "+cur+":\\n"+M.map(function(m){return m\[1\]+": "+(x\[m\[0\]\]||"-")}).join("\\n");try{navigator.clipboard.writeText(t);document.getElementById("cp").textContent="¡Copiado! Pégalo en el chat con tu coach"}catch(e){document.getElementById("cp").textContent="No se pudo copiar"}}
+function copyM(){var x=dd(cur).m,t="Mis medidas del día "+cur+":\n"+M.map(function(m){return m[1]+": "+(x[m[0]]||"-")}).join("\n");try{navigator.clipboard.writeText(t);document.getElementById("cp").textContent="¡Copiado! Pégalo en el chat con tu coach"}catch(e){document.getElementById("cp").textContent="No se pudo copiar"}}
 function share(){var u=location.href;try{if(navigator.share){navigator.share({title:"Mis 30 días",text:"Prueba este cuaderno de 30 días para enfocarte y cuidarte:",url:u});return}navigator.clipboard.writeText(u);document.getElementById("sh").textContent="¡Enlace copiado!"}catch(e){}}
-function wipe(b){if(b.\_a){try{localStorage.removeItem("c30")}catch(e){}S={};go("start")}else{b.\_a=1;b.textContent="Toca otra vez para borrar todo"}}
+function wipe(b){if(b._a){try{localStorage.removeItem("c30")}catch(e){}S={};go("start")}else{b._a=1;b.textContent="Toca otra vez para borrar todo"}}
 function render(){var a=document.getElementById("app"),h="";
 if(view=="start"){var n=3;
-h+='<button class="back" aria-label="Atrás" onclick="pv()" '+(step?"":"style=visibility:hidden")+'>←'+\[0,1,2\].map(function(i){return '<i class="'+(i<=step?"on":"")+'">'}).join("")+"";
-if(step0){h+='⚡Tus 30 días empiezan aquíUna misión corta por día para enfocarte, manejar la ansiedad y construir hábitos sólidos. Tú pones 10 minutos, yo te guío.¿Cómo te llamas?¿Cuál es tu objetivo principal?'+GOALS.map(function(g){return '<button class="chip '+(S.goalg?"on":"")+'" onclick="goal(''+g+'')">'+g+""}).join("")+'Continuar'}
-else if(step1){h+='Tu porqué profundoEscribe tres “porqués” seguidos. Ej.: quiero bajar de peso → para sentirme cómodo/a con mi ropa → para recuperar mi seguridad.'+esc(S.why)+'Siguiente'}
-else{S.m0=S.m0||{};h+='Tu punto de partidaMide con la misma ropa y a la misma hora. Puedes dejarlo vacío y llenarlo después. Recuerda tomar fotos de frente, perfil y espalda.'+mInputs(S.m0)+'Empezar el día 1'}
-a.innerHTML=h;if(step2)bindM(S.m0);return}
+h+='<div class="top"><button class="back" aria-label="Atrás" onclick="pv()" '+(step?"":"style=visibility:hidden")+'>←</button><div class="dots">'+[0,1,2].map(function(i){return '<i class="'+(i<=step?"on":"")+'"></i>'}).join("")+"</div></div>";
+if(step==0){h+='<div class="big">⚡</div><h1>Tus 30 días empiezan aquí</h1><p>Una misión corta por día para enfocarte, manejar la ansiedad y construir hábitos sólidos. Tú pones 10 minutos, yo te guío.</p><div class="card"><label for="nm">¿Cómo te llamas?</label><input id="nm" type="text" value="'+esc(S.name)+'" oninput="sv(\'name\',this.value)"><label>¿Cuál es tu objetivo principal?</label><div class="chips">'+GOALS.map(function(g){return '<button class="chip '+(S.goal==g?"on":"")+'" onclick="goal(\''+g+'\')">'+g+"</button>"}).join("")+'</div></div><button class="btn" onclick="nx()">Continuar</button>'}
+else if(step==1){h+='<h2>Tu porqué profundo</h2><p>Escribe tres “porqués” seguidos. Ej.: quiero bajar de peso → para sentirme cómodo/a con mi ropa → para recuperar mi seguridad.</p><div class="card"><textarea id="wy" aria-label="Mi porqué" oninput="sv(\'why\',this.value)">'+esc(S.why)+'</textarea></div><button class="btn" onclick="nx()">Siguiente</button>'}
+else{S.m0=S.m0||{};h+='<h2>Tu punto de partida</h2><p>Mide con la misma ropa y a la misma hora. Puedes dejarlo vacío y llenarlo después. Recuerda tomar fotos de frente, perfil y espalda.</p><div class="card">'+mInputs(S.m0)+'</div><button class="btn" onclick="S.on=1;save();go(\'map\')">Empezar el día 1</button>'}
+a.innerHTML=h;if(step==2)bindM(S.m0);return}
 if(view=="map"){var d=done(),c=cur1();
-h+='Hola, '+esc(S.name||"campeón/a")+' 🔥'+d+' de 30 días'+lvl(d)+''+xp()+' XP'+(d<30?'Continuar día '+c+"":'Ver mi resultado final 🏆')+"";
-for(var p=0;p<3;p++){h+=''+PH\[p\]\[0\]+'';for(var i=p*10+1;i<=p\*10+10;i++){var x=S.days&&S.days\[i\],t=D\[i-1\]\[3\];h+='<button class="node '+(x&&x.d?"done":ic?"now":"")+'" onclick="go('day','+i+')" aria-label="Día '+i+'">'+(x&&x.d?"✓":i)+(t"c"?"📸":t=="r"?"⭐":"")+""}h+=""}
-h+='Compartir aplicaciónBorrar mis datos';a.innerHTML=h;return}
-if(view=="day"){var it=D\[cur-1\],x=dd(cur),chq=it\[3\]"c",st=\["m","r"\].concat(chq?\["x"\]:\[\],\["c","ok"\]),k=st\[step\],col=PH\[ph(cur)\]\[1\];
-h+='←'+st.slice(0,-1).map(function(\_,i){return '<i class="'+(i<=step?"on":"")+'">'}).join("")+"";
-if(k"m"){h+='Día '+cur+" de 30"+(it\[3\]"r"?" ⭐ Revisión":"")+(chq?" 📸 Chequeo":"")+''+it\[0\]+'Tu misión'+it\[1\]+'Si hoy dispones de poco tiempo, lee la pregunta y responde en una sola frase.Hecho, siguiente'}
-else if(k"r"){h+='Para pensar'+it\[2\]+''+esc(x.r)+'Siguiente'}
-else if(k=="x"){h+='Fotos y medidas 📏Toma las 3 fotos clave y registra tus medidas corporales.'+mInputs(x.m)+'Copiar medidas para mi coachSiguiente'}
-else if(k=="c"){h+='Cierra tu día'+CK.map(function(q,i){return '<button class="chk '+(x.c\[i\]?"on":"")+'" onclick="tg('+i+')">'+q\[0\]+""+q\[1\]+""}).join("")+'Energía'+x.e+'/10Ansiedad'+x.a+'/10Una victoria de hoyTerminar el día 🎉'}
-else{var last=cur==30;h+=''+(last?"🏆":"🔥")+''+(last?"¡Lo lograste!":"¡Día "+cur+" completado!")+'Llevas '+done()+' de 30 días y '+xp()+' XP. La constancia supera a la intensidad.'+(done()10||done()20?'Nuevo nivel: '+lvl(done())+' ⭐':"")+'<button class="btn" onclick="'+(last?"go('end')":"go('day',"+(cur+1)+")")+'">'+(last?"Ver mi resultado":"Siguiente día")+'Volver al mapa'}
-a.innerHTML=h;if(k"x")bindM(x.m);return}
-if(view"end"){h+='🏆Tus 30 días'+esc(S.name)+', mira lo que construiste. Los resultados son el reflejo directo de tus decisiones diarias.Día 0102030'+M.map(function(m){var k=m\[0\];return ""+m\[1\].split(" ")\[0\]+""+esc((S.m0||{})\[k\]||"-")+""+\[10,20,30\].map(function(n){return ""+esc(((S.days&&S.days\[n\]&&S.days\[n\].m)||{})\[k\]||"-")+""}).join("")+""}).join("")+""+(S.why?'Tu porqué'+esc(S.why)+'':"")+'Volver al mapaCompartir resultado';a.innerHTML=h}}
+h+='<div class="card"><h2>Hola, '+esc(S.name||"campeón/a")+' 🔥</h2><div class="bar"><i style="width:'+Math.round(d/30*100)+'%"></i></div><div class="stats"><span>'+d+' de 30 días</span><span>'+lvl(d)+'</span><span>'+xp()+' XP</span></div>'+(d<30?'<button class="btn" onclick="go(\'day\','+c+')">Continuar día '+c+"</button>":'<button class="btn" onclick="go(\'end\')">Ver mi resultado final 🏆</button>')+"</div>";
+for(var p=0;p<3;p++){h+='<h3 style="color:'+PH[p][1]+'; margin-top:20px;">'+PH[p][0]+'</h3><div class="grid">';for(var i=p*10+1;i<=p*10+10;i++){var x=S.days&&S.days[i],t=D[i-1][3];h+='<button class="node '+(x&&x.d?"done":i==c?"now":"")+'" onclick="go(\'day\','+i+')" aria-label="Día '+i+'">'+(x&&x.d?"✓":i)+(t=="c"?"<small>📸</small>":t=="r"?"<small>⭐</small>":"")+"</button>"}h+="</div>"}
+h+='<button class="btn alt" id="sh" onclick="share()" style="margin-top:24px;">Compartir aplicación</button><button class="link" onclick="wipe(this)">Borrar mis datos</button>';a.innerHTML=h;return}
+if(view=="day"){var it=D[cur-1],x=dd(cur),chq=it[3]=="c",st=["m","r"].concat(chq?["x"]:[],["c","ok"]),k=st[step],col=PH[ph(cur)][1];
+h+='<div class="top"><button class="back" aria-label="Atrás" onclick="pv()">←</button><div class="dots">'+st.slice(0,-1).map(function(_,i){return '<i class="'+(i<=step?"on":"")+'"></i>'}).join("")+"</div></div>";
+if(k=="m"){h+='<span class="tag" style="background:'+col+'">Día '+cur+" de 30"+(it[3]=="r"?" ⭐ Revisión":"")+(chq?" 📸 Chequeo":"")+'</span><h2>'+it[0]+'</h2><div class="card"><h3>Tu misión</h3><p>'+it[1]+'</p></div><p class="small">Si hoy dispones de poco tiempo, lee la pregunta y responde en una sola frase.</p><button class="btn" onclick="nx()">Hecho, siguiente</button>'}
+else if(k=="r"){h+='<h2>Para pensar</h2><div class="card"><p>'+it[2]+'</p><textarea aria-label="Mi respuesta" placeholder="Escribe aquí de forma honesta..." oninput="sd(\'r\',this.value)">'+esc(x.r)+'</textarea></div><button class="btn" onclick="nx()">Siguiente</button>'}
+else if(k=="x"){h+='<h2>Fotos y medidas 📏</h2><p>Toma las 3 fotos clave y registra tus medidas corporales.</p><div class="card">'+mInputs(x.m)+'</div><button class="btn alt" id="cp" onclick="copyM()">Copiar medidas para mi coach</button><button class="btn" onclick="nx()">Siguiente</button>'}
+else if(k=="c"){h+='<h2>Cierra tu día</h2><div>'+CK.map(function(q,i){return '<button class="chk '+(x.c[i]?"on":"")+'" onclick="tg('+i+')"><b>'+q[0]+"</b>"+q[1]+"</button>"}).join("")+'</div><div class="card"><div class="row"><span>Energía</span><span id="ev">'+x.e+'/10</span></div><input type="range" min="0" max="10" value="'+x.e+'" aria-label="Energía" oninput="sd(\'e\',+this.value);ev.textContent=this.value+\'/10\'" style="margin:8px 0 16px"><div class="row"><span>Ansiedad</span><span id="av">'+x.a+'/10</span></div><input type="range" min="0" max="10" value="'+x.a+'" aria-label="Ansiedad" oninput="sd(\'a\',+this.value);av.textContent=this.value+\'/10\'" style="margin:8px 0 16px"><label for="wn">Una victoria de hoy</label><input id="wn" type="text" value="'+esc(x.w)+'" oninput="sd(\'w\',this.value)"></div><button class="btn" onclick="finish()">Terminar el día 🎉</button>'}
+else{var last=cur==30;h+='<div class="big">'+(last?"🏆":"🔥")+'</div><h2 style="text-align:center">'+(last?"¡Lo lograste!":"¡Día "+cur+" completado!")+'</h2><p style="text-align:center">Llevas '+done()+' de 30 días y '+xp()+' XP. La constancia supera a la intensidad.</p>'+(done()==10||done()==20?'<div class="card" style="text-align:center"><h3>Nuevo nivel: '+lvl(done())+' ⭐</h3></div>':"")+'<button class="btn" onclick="'+(last?"go('end')":"go('day',"+(cur+1)+")")+'">'+(last?"Ver mi resultado":"Siguiente día")+'</button><button class="btn alt" onclick="go(\'map\')">Volver al mapa</button>'}
+a.innerHTML=h;if(k=="x")bindM(x.m);return}
+if(view=="end"){h+='<div class="big">🏆</div><h1>Tus 30 días</h1><p>'+esc(S.name)+', mira lo que construiste. Los resultados son el reflejo directo de tus decisiones diarias.</p><div class="card"><table><tr><th></th><th>Día 0</th><th>10</th><th>20</th><th>30</th></tr>'+M.map(function(m){var k=m[0];return "<tr><td>"+m[1].split(" ")[0]+"</td><td>"+esc((S.m0||{})[k]||"-")+"</td>"+[10,20,30].map(function(n){return "<td>"+esc(((S.days&&S.days[n]&&S.days[n].m)||{})[k]||"-")+"</td>"}).join("")+"</tr>"}).join("")+"</div></div>"+(S.why?'<div class="card"><h3>Tu porqué</h3><p>'+esc(S.why)+'</p></div>':"")+'<button class="btn" onclick="go(\'map\')">Volver al mapa</button><button class="btn alt" id="sh" onclick="share()" style="margin-top:12px">Compartir resultado</button>';a.innerHTML=h}}
 render();
+</script>
+<!-- Botón de Acceso Rápido al Panel Admin -->
+<div style="text-align: center; margin: 40px 0 20px 0;">
+  <a href="admin.html" style="color: #1E293B; font-size: 11px; text-decoration: none; background: transparent; padding: 6px 12px; border-radius: 6px; transition: color 0.2s;" onmouseover="this.style.color='#FF5C00'" onmouseout="this.style.color='#1E293B'">⚙️ Admin</a>
+</div>
+</body>
+</html>
